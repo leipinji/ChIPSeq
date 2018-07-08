@@ -1,11 +1,24 @@
-configfile: "./config.yaml"
+configfile: "snakemake/config.yaml"
 
-rule qc:
+sample = config['Sample']
+histone = config['Histone']
+rep = config['Rep']
+
+rule all:
 	input:
-		fastq=expand("data/samples/{sample}.fastq",sample=config['SAMPLE'])
+		expand("qc/clean/{histone}/{sample}/{rep}/",histone=histone,sample=sample,rep=rep), 
+		expand("qc/clean/{histone}/{sample}/{rep}/R2",histone=histone,sample=sample,rep=rep),
+		expand("qc/raw/{histone}/{sample}/{rep}/R1",histone=histone,sample=sample,rep=rep),
+		expand("qc/raw/{histone}/{sample}/{rep}/R2",histone=histone,sample=sample,rep=rep)
+
+
+rule clean_qc:
+	input:
+		R1 = "clean/{histone}/{sample}-R{rep}_clean_R1.fastq.gz",
+		R2 = "clean/{histone}/{sample}-R{rep}_clean_R2.fastq.gz"
 	output:
-		"data/qc/"
+		R1 = "qc/clean/{histone}/{sample}/{rep}/R1/",
+		R2 = "qc/clean/{histone}/{sample}/{rep}/R2/"
+
 	shell:
-		"fastqc {input} -o {output} " 
-
-
+		"fastqc -o {output.R1}" 
