@@ -1,7 +1,35 @@
-SAMPLE:
- - SRR1409975_1_5Fu_P53
- - SRR4090091_1_Nutlin3A_P53
- - SRR4090089_1_Input
-index: /data3/leipinji/genome_index/hg38_bowtie2_index/GCA_000001405.15_GRCh38_no_alt_analysis_set.fna.bowtie_index
-org: hs
+Sample:
+ - ctrl
+ - 2weeks
+ - 4weeks
+ - 7weeks
+ - 10weeks
 
+Histone:
+ - H3K4me3
+ - H3K27ac
+ - H3K4me1
+ - H3K27me3
+ - H3K9me2
+ - H3K9me3
+ - Input
+
+Rep:
+ - 1
+ - 2
+ - 3
+
+# mouse mm10 bowtie2 index
+mm10_bowtie2_index: /data3/leipingji/genome_index/mm10_bowtie2_index/mm10
+
+# human hg38 bowtie2 index
+hg38_bowtie2_index: /data3/leipingji/genome_index/hg38_bowtie2_index/GCA_000001405.15_GRCh38_no_alt_analysis_set.fna.bowtie_index
+# index: /data3/leipingji/genome_index/hg19_bowtie2/hg19
+
+hs: hs
+
+mm: mm
+
+#org:
+# human: hs
+# mouse: mm
