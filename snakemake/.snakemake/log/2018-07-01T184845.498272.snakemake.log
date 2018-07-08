@@ -1,0 +1,3 @@
+WorkflowError in line 1 of /data3/leipingji/github/ChIPSeq/snakemake/ChIP-Seq.snakefile:
+Config file snakemake/config.yaml not found.
+  File "/data3/leipingji/github/ChIPSeq/snakemake/ChIP-Seq.snakefile", line 1, in <module>

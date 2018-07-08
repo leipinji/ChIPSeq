@@ -22,6 +22,15 @@ Rep:
 # mouse mm10 bowtie2 index
 mm10_bowtie2_index: /data3/leipingji/genome_index/mm10_bowtie2_index/mm10
 
+<<<<<<< HEAD
+=======
+# mouse mm9 bowtie2 index
+
+
+# human hg19 bowtie2 index
+
+
+>>>>>>> df81e3b27a1071dfac022b513b61aa0638448b6f
 # human hg38 bowtie2 index
 hg38_bowtie2_index: /data3/leipingji/genome_index/hg38_bowtie2_index/GCA_000001405.15_GRCh38_no_alt_analysis_set.fna.bowtie_index
 # index: /data3/leipingji/genome_index/hg19_bowtie2/hg19
