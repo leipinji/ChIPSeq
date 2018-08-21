@@ -1,0 +1,7 @@
+bigwig1	bigwig2	labels1	labels2	bed
+YJ-180522-Si3-DH3K27ac_combined.rmdup.bigwig	YJ-180522-Si4-DH3K27ac_combined.rmdup.bigwig	si3.DMSO.H3K27ac	si4.DMSO.H3K27ac	DMSO.H3K27ac.peaks.bed
+YJ-180522-Si3-DH3K4me1_combined.rmdup.bigwig	YJ-180522-Si4-DH3K4me1_combined.rmdup.bigwig	si3.DMSO.H3K4me1	si4.DMSO.H3K4me1	DMSO.H3K4me1.peaks.bed
+YJ-180522-Si3-DH3K4me3_combined.rmdup.bigwig	YJ-180522-Si4-DH3K4me3_combined.rmdup.bigwig	si3.DMSO.H3K4me3	si4.DMSO.H3K4me3	DMSO.H3K4me3.peaks.bed
+YJ-180522-Si3-FH3K27ac_combined.rmdup.bigwig	YJ-180522-Si4-FH3K27ac_combined.rmdup.bigwig	si3.5Fu.H3K27ac	si4.5Fu.H3K27ac	5Fu.H3K27ac.peaks.bed
+YJ-180522-Si3-FH3K4me1_combined.rmdup.bigwig	YJ-180522-Si4-FH3K4me1_combined.rmdup.bigwig	si3.5Fu.H3K4me1	si4.5Fu.H3K4me1	5Fu.H3K4me1.peaks.bed
+YJ-180522-Si3-FH3K4me3_combined.rmdup.bigwig	YJ-180522-Si4-FH3K4me3_combined.rmdup.bigwig	si3.5Fu.H3K4me3	si4.5Fu.H3K4me3	5Fu.H3K4me3.peaks.bed

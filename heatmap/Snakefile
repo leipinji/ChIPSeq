@@ -1,0 +1,30 @@
+# The main entry point of your workflow.
+# After configuring, running snakemake -n in a clone of this repository should successfully execute a dry-run of the workflow.
+import pandas as pd
+#from snakemake.utils import validate
+# from snakemake.utils import min_version
+
+configfile: "config.yaml"
+
+#validate(config, schema="schemas/config.schema.yaml")
+
+samples = pd.read_table(config['samples'])
+#validate(samples, schema="schemas/samples.schema.yaml")
+
+peaks = pd.read_table(config['peaks'])
+#validate(peaks,schema="schemas/peaks.schema.yaml")
+
+#prefix = ['scale_region','reference_point']
+#prefix = ['reference_point']
+
+rule all:
+    input:
+    	expand("results/{file}_matrix.gz",file=config['prefix']),
+	expand("results/{file}_heatmap.svg",file=config['prefix']),
+	expand("results/{file}_profile.svg",file=config['prefix'])
+        # The first rule should define the default target files
+        # Subsequent target rules can be specified below. They should start with all_*.
+
+include: "rules/common.smk"
+#include: "rules/scale_region_heatmap.smk"
+include: "rules/reference_point_heatmap.smk"

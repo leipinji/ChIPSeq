@@ -1,0 +1,4 @@
+sample	bigwig	color	yMin	yMax	zMin	zMax	profileColor
+P63	P63.rmdup.bigwig	Greens	0	30	0	30	salmon
+IgG	P63_IgG.rmdup.bigwig	Reds	0	30	0	30	limegreen
+Input	P63_Input.rmdup.bigwig	Oranges	0	30	0	30	cornflowerblue

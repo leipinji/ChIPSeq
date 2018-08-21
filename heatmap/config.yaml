@@ -1,0 +1,24 @@
+# This file should contain everything to configure the workflow on a global scale.
+# In case of sample based data, it should be complemented by a samples.tsv file that contains
+# one row per sample. It can be parsed easily via pandas.
+
+# samples sheet in tab delimited format
+samples: samples.tsv
+# peaks/genes in bed format
+peaks: peaks.tsv
+
+
+upStream: 3000
+downStream: 3000
+binSize: 100
+
+heatmapWidth: 7
+
+#get_yMin: "0 0 0"
+#get_yMax: "30 30 30"
+#get_zMin: "0 0 0"
+#get_zMax: "30 30 30"
+
+# prefix of output file
+prefix: 
+# eg. prefix: "P63"
